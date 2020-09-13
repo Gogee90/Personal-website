@@ -1,0 +1,45 @@
+{% extends 'blog_zapravschika/index.html' %}
+{% load static %}
+
+{% block title %}Ремонт, восстановление, заправка картриджей{% endblock %}
+
+{% block content %}
+    <div class="main_page">
+        <div class="site_news">
+        <h2>Новости сайта</h2>
+        {% for new in news %}
+            <h3 class="em_text"><a href="{{ new.get_absolute_url }}" onclick="changeId(this, '.detailed_post'); return false;">{{ new.title }}</a></h3>
+            <div class="content_section_01">
+                {{ new.text | safe | linebreaksbr | truncatewords:30 }}
+            </div>
+            <hr>
+        {% endfor %}
+        </div>
+        <div class="articles_center">
+            <h2>Статьи</h2>
+                {% for record in posts %}
+                    <ul>
+                    {% if record.upload %}
+                        <li class="img"><img src="{{ record.upload.url }}"></li>
+                    {% else %}
+                        <p></p>
+                    {% endif %}
+                        <li>
+                            <a href="{{ record.get_absolute_url }}" onclick="changeId(this, '.detailed_post'); return false;"><h3 class="em_text">{{ record.title }}</h3></a>
+                            <div class="content_section_01">{{ record.text | truncatewords_html:30 | safe }}</div>
+                        </li>
+                    </ul>
+                    <hr>
+                {% endfor %}
+        </div>
+        <div class="articles_right">
+            <h2>Полезно почитать</h2>
+            {% for post in faq %}
+                <h3 class="em_text"><a href="{{ post.get_absolute_url }}" onclick="changeId(this, '.detailed_post'); return false;">{{ post.title }}</a></h3>
+                <h6>{{ post.created_date }}</h6>
+                <div class="content_section_01">{{ post.text | safe | linebreaksbr | truncatewords:30 }}</div>
+                <hr>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

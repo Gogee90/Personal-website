@@ -1,0 +1,8 @@
+<div class="create_post">
+    <form method="post" action="{% url 'create_post' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.media }}
+        {{ form.as_p }}
+        <button type="submit">Опубликовать</button>
+    </form>
+</div>

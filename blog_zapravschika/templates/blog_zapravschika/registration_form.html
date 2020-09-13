@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+    <h2 class="form_header">Регистрация</h2>
+    <form class="registration" method="post">
+        {% csrf_token %}
+        <ul>
+            {{ registration_form.as_ul }}
+            <li><button onclick="getPassword(); return false;" type="submit">Зарегистрироваться</button></li>
+        </ul>
+    </form>
+</body>
+</html>

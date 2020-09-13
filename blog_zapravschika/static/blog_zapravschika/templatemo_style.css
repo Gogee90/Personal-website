@@ -1,0 +1,386 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-style: normal;
+    background-color: #f3f4f4;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ul {
+    padding: 0;
+}
+
+
+#myFooter {
+    margin-top: 20px;
+    background-color: #FDFEFE;
+    color: #333333;
+    border: 1px inset;
+}
+
+#map-container {
+    height: 500px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    display: flex;
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+}
+
+#myFooter a {
+    color: #333333;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+  }
+
+
+  nav ul {
+    /* margin:auto; */
+    background: #FDFEFE;
+      border: 1px;
+      border-style: outset;
+      box-shadow: 0 8px 6px -6px #999;
+      justify-content: space-evenly;
+  }
+
+  nav .links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  nav li a{
+      display: inline-flex;
+      justify-content: flex-start;
+      color: #333333;
+  }
+
+  .form {
+      justify-content: flex-end;
+      border-radius: 8px;
+  }
+
+  a {
+    text-decoration:none;
+    color: #42515f;
+    display:inline-block;
+    transition:all .33s linear;
+    -webkit-transition:all .33s linear;
+  }
+
+  .hui{
+    width:120px;
+    max-width: 50%;
+    height:2px;
+    background:#fff;
+  }
+
+
+  .shit_wrapper {
+      width: 50%;
+      float: left;
+      clear: left;
+  }
+
+  .pagination ul {
+    list-style: none;
+    color: black;
+  }
+
+  .pagination ul li {
+      display: inline-block;
+      margin-bottom: 2%;
+  }
+
+  .pagination a {
+      margin: 0 4px;
+  }
+
+  h3.adress {
+    margin-top: 1%;
+  }
+
+  #map-container {
+      margin-top: -0.5%;
+  }
+
+  .em_text a {
+      text-align: justify;
+      width: 100%;
+      color: black;
+  }
+
+  .search_results {
+      margin-top: 1%;
+      width: 100%;
+      margin-bottom: -2%;
+  }
+
+  .banner {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
+
+  .loginico {
+      height: 2rem;
+      width: 2rem;
+  }
+
+  .main_page {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+  }
+
+
+  #myFooter {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+  }
+
+  .site_news {
+      border: 1px outset;
+      padding: 0 1rem;
+      box-shadow: 0 8px 6px -6px #999;
+      width: 90%;
+      background-color: #FDFEFE;
+  }
+
+  .articles_right {
+      border: 1px inset;
+      padding: 0 1rem;
+      width: 90%;
+      box-shadow: 0 8px 6px -6px #999;
+      background-color: #FDFEFE;
+  }
+
+  .articles_center {
+      overflow: auto;
+      border: outset 1px;
+      margin: 0 1em;
+      box-shadow: 0 8px 6px -6px #999;
+      background-color: #FDFEFE;
+  }
+
+  .articles_center h2 {
+      margin-left: 2em;
+  }
+
+  .articles_center ul {
+      display: flex;
+  }
+
+  .articles_center ul li {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 10px 0 10px;
+  }
+
+  #column_w530 {
+      display: flex;
+      flex-direction: column;
+      border: inset 1px;
+      padding: 1% 1%;
+      background-color: #FDFEFE;
+      margin: 0 15%;
+  }
+
+  #column_w530 img {
+      max-width: 50%;
+  }
+
+  #column_w530 .posts {
+      flex-wrap: wrap;
+  }
+
+  .articles_center ul a {
+      color: #333333;
+  }
+
+  .login_form ul li {
+      display: flex;
+      justify-content: flex-end;
+      padding: .5em;
+      list-style: none;
+  }
+
+  .login_form ul li label {
+      padding: .5em 1em .5em 0;
+      flex: 1;
+  }
+
+  .login_form ul li input {
+      flex: 2;
+  }
+
+  .login_form button {
+      padding: .5em;
+      background: gray;
+      color: white;
+      border: none;
+  }
+
+  .detailed_post {
+      display: flex;
+      flex-direction: column;
+      border: outset 1px;
+      padding: 1% 1%;
+      background-color: #FDFEFE;
+      margin: 0 15%;
+  }
+
+  .create_post form {
+      display: flex;
+      flex-direction: column;
+  }
+
+
+  .registration ul li {
+      display: flex;
+      justify-content: flex-end;
+      padding: .5em;
+      list-style: none;
+  }
+
+  .registration ul li label {
+      padding: .5em 1em .5em 0;
+      flex: 1;
+  }
+
+  .registration ul li input {
+      flex: 2;
+  }
+
+  .registration button {
+      padding: .5em;
+      background: gray;
+      color: white;
+      border: none;
+  }
+
+    .form_header {
+        text-align: center;
+    }
+
+  .fa-edit:before {
+    content: "\f044";
+    padding: 26px;
+}
+
+  .social_auth {
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  @media screen and (max-width: 800px) {
+      .main_page {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+      }
+
+      .main_page div {
+          width: 100%;
+      }
+
+      .main_page .articles_center {
+          margin: 1rem 0;
+      }
+
+      .articles_center ul {
+          flex-wrap: wrap;
+      }
+
+      nav .links {
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+          padding: .5rem;
+      }
+
+      .links li {
+          padding: .5em;
+      }
+
+      .login_form ul li {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      input {
+          text-align: center;
+      }
+
+      .detailed_post {
+          margin: 0 0;
+      }
+
+      #column_w530 {
+          margin: 0 0;
+      }
+  }

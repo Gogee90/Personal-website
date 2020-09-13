@@ -1,0 +1,16 @@
+{% extends 'blog_zapravschika/index.html' %}
+
+{% block content %}
+    <div id="column_w530">
+        <div class="header_02">Полезно почитать</div>
+        {% for faq_page in faq %}
+            <h3 class="em_text"><a href="{{ faq_page.get_absolute_url }}">{{ faq_page.title }}</a></h3>
+            {% if faq_page.upload %}
+                <img src="{{ faq_page.upload.url }}" class="img-fluid">
+            {% else %}
+                <p></p>
+            {% endif %}
+        {% endfor %}
+        </div>    
+    </div>
+{% endblock %}

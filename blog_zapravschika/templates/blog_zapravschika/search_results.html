@@ -1,0 +1,15 @@
+{% extends 'blog_zapravschika/index.html' %}
+{% load watson %}
+
+{% block content %}
+    {% for result in search_results  %}
+        <div class="search_results">
+            {% if result is not none %}
+                <h3 class="em_text"><a href="{{ result.object.get_absolute_url }}">{{ result.object.title }}</h3></a>
+                <p>{{ result.object.text | safe | truncatewords:50 }}</p>
+            {% else %}
+                <h3 class="em_text">По вашему запросу ничего не найдено.</h3>
+            {% endif %}
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block content %}
+    <form id="send_email" action="{% url 'admin:email_send' %}" method="post">
+        {% csrf_token %}
+        <ul>
+            {{ form.media | safe }}
+            {{ form.as_ul }}
+        </ul>
+        <button type="submit">Отправить письмо</button>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="{% static 'blog_zapravschika/base.js' %}"></script>
+    {{ block.super }}
+{% endblock %}

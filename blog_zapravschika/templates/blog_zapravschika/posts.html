@@ -1,0 +1,42 @@
+{% extends 'blog_zapravschika/index.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="column_w530">
+        <div class="header_02">Последние статьи.</div>
+        <div class="posts">
+            {% for post in page_obj %}
+                {% url 'articles' as articles %}
+                {% url 'news' as news %}
+                {% url 'faq' as faq %}
+                {% if request.path == articles %}
+                    <h3 class="em_text"><a href="{% url 'detailed_article' id=post.id slug=post.slug %}" onclick="changeId(this, '.detailed_post'); return false;">{{ post.title }}</a></h3>
+                {% elif request.path == news %}
+                    <h3 class="em_text"><a href="{% url 'detailed_news' id=post.id slug=post.slug %}" onclick="changeId(this, '.detailed_post'); return false;">{{ post.title }}</a></h3>
+                {% else %}
+                    <h3 class="em_text"><a href="{% url 'faq_page' id=post.id slug=post.slug %}" onclick="changeId(this, '.detailed_post'); return false;">{{ post.title }}</a></h3>
+                {% endif %}
+                <div class="content_section_01">
+                    {{ post.text | safe | truncatewords:30 }}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="pagination">
+            <ul>
+            {% if page_obj.has_previous %}
+                <li><a href="?page=1">&laquo; К первой странице</a></li>
+                <li><a href="?page={{ page_obj.previous_page_number }}">К предыдущей</a></li>
+            {% endif %}
+
+            <li><span class="current">
+                Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}.
+            </span></li>
+
+            {% if page_obj.has_next %}
+                <li><a href="?page={{ page_obj.next_page_number }}">Следующая</a></li>
+                <li><a href="?page={{ page_obj.paginator.num_pages }}">Последняя &raquo;</a></li>
+            {% endif %}
+            </ul>
+        </div>    
+    </div>
+{% endblock %}

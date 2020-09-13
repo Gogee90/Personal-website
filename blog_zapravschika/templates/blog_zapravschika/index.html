@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="google-site-verification" content="DM7R7tuBum-X5EIRzODlVdT2pjRx2ZhD4Ba-z_JCZ1k" />
+        <meta name="yandex-verification" content="7d6a97d27e853eab" />
+        <meta name="description" content="Инструкции по ремонту копировальной техники и заправки картриджей в оренбурге">
+        <meta name="keywords" content="Заправка картриджей в оренбурге, ремонт картриджей в оренбурге, восстановление картриджей в оренбурге, ремонт копировальной техники в оренбурге">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="robots" content="index, follow">
+        <title>{% block title %}Ремонт копировальной техники, заправка и восстановление картриджей{% endblock %}</title>
+        <link href="{% static 'blog_zapravschika/templatemo_style.css' %}" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="{% static 'blog_zapravschika/favicon.ico' %}" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/613064fc62.js" crossorigin="anonymous"></script>
+        <script data-ad-client="ca-pub-9074917220010842" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <nav>
+        <ul class="links">
+            <li>
+                {% if user.is_authenticated %}
+                    <div id="login">
+                        {{ user.username }} | <a href="{% url 'logout_user' %}">Выйти</a>
+                    </div>
+                {% else %}
+                    <a href="{% url 'login_page' %}" rel="modal:open">Войти</a> | <a href="{% url 'user_create' %}" rel="modal:open">Зарегистрироваться</a>
+                {% endif %}
+            </li>
+            <li><a class="ssilka_1" href="/" onclick="changeId(this, '.main_page'); return false;">Домой</a></li>
+            <li><a class="ssilka_articles"  href="{% url 'articles' %}" onclick="changeId(this, '#column_w530'); return false;">Статьи</a></li>
+            <li><a class="ssilka_news" href="{% url 'news'%}" onclick="changeId(this, '#column_w530'); return false;">Новости</a></li>
+            <li><a class="ssilka_faq"  href="{% url 'faq' %}" onclick="changeId(this, '#column_w530'); return false;">FAQ</a></li>
+            <li><a class="ssilka_coordinates"  href="{% url 'coordinates' %}" onclick="changeId(this, '.col'); return false;">Обратная связь</a></li>
+            <li><img src="{% static 'blog_zapravschika/scrap56.ru.png'%}" class="banner"></li>
+            <li class="form">
+                <div class="input-wrapper" data-text="">
+                    <form action="{% url 'watson:search' %}">
+                        <input name="q" value="{{request.GET.q}}" type="text" placeholder="Поиск">
+                    <button type="submit">Искать</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="summernote">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer id="myFooter">
+        <ul>
+            <li><h5>Навигация</h5></li>
+            <li><a href="/" onclick="changeId(this, '.main_page'); return false;">На домашнюю страницу</a></li>
+            <li><a href="{% url 'articles' %}" onclick="changeId(this, '#column_w530'); return false;">Статьи</a></li>
+            <li><a href="{% url 'coordinates' %}" onclick="changeId(this, '.col'); return false;">Контактная информация</a></li>
+        </ul>
+        <ul>
+            <li><h5>Адрес</h5></li>
+            <li>ул.Туркестанская 5, 2 этаж</li>
+            <li>Комиссионный магазин "Железяка"</li>
+            <li>Телефон: 8 (353) 277-39-12</li>
+        </ul>
+        <ul>
+            <li><h5>График работы</h5></li>
+            <li>пн-чт 10:00-19:00</li>
+            <li>пт 10:00-17:00</li>
+            <li>сб 10:00-15:00</li>
+            <li>перерыв на обед с 13:30-14:00</li>
+        </ul>
+        <ul>
+            <li><h5>Для вас</h5></li>
+            <li>Ремонт компьютеров,</li>
+            <li>ноутбуков,</li>
+            <li>копировальной техники,</li>
+            <li>восстановление данных с жестких дисков,</li>
+            <li>заправка картриджей</li>
+        </ul>
+            <!-- Here we use the Google Embed API to show Google Maps. -->
+            <!-- In order for this to work in your project you will need to generate a unique API key.  -->
+    </footer>
+    <div class="footer-copyright">
+        <p>Все права защищены© 2020</p>
+    </div>
+    <!-- Chatra {literal} -->
+    <script>
+        (function(d, w, c) {
+            w.ChatraID = 'ArWsyJkcyYTDiriBn';
+            var s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>
+    <!-- /Chatra {/literal} -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="{% static 'blog_zapravschika/base.js' %}"></script>
+<!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</body>
+</html>
