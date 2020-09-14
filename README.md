@@ -1,5 +1,5 @@
 # Personal-website
-[![Issues][issues-shield]][issues-url]
+[[Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -22,7 +22,6 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
@@ -58,9 +57,6 @@ It's not actually a demo but a fully functional website built by me.
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-At least Python:3.5 Python-docx-template
 
 ### Installation
 
@@ -80,8 +76,10 @@ pip install requirements.txt
 ## Usage
 
 1. CD to your project's directory
-2. python manage.py migrate
-3. python manage.py runserver
+2. python manage.py makemigrations
+3. python manage.py migrate
+4. python manage.py createsuperuser your_username
+4. python manage.py runserver
 
 
 <!-- LICENSE -->
@@ -106,6 +104,8 @@ Project Link: [https://github.com/Gogee90/Personal-website/blob/master/README.md
 * [Python social auth](https://github.com/python-social-auth/social-core)
 * [CKEditor](https://ckeditor.com/)
 * [MIT](https://opensource.org/licenses/MIT)
+* [Nginx](https://nginx.org/)
+* [Gunicorn](https://gunicorn.org/)
 
 
 
