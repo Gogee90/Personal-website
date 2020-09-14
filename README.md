@@ -73,9 +73,6 @@ python -m venv your_env(linux: python3 -m venv your_env)
 Windows: your_env\Scripts\activate, Linux: source your_env/bin/activate
 5. Install packages
 pip install requirements.txt
-6. CD to your project's directory
-7. python manage.py migrate
-8. python manage.py runserver
 
 
 
