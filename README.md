@@ -1,12 +1,12 @@
 # Personal-website
-# An auto collision estimating software
+# This repository is a clone of the existing fully-functional website.
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 <p>
   <p align="center">
-    A program for vehicle damage estimate
+    Personal website clone
     <br />
     <a href="https://github.com/Gogee90/-"><strong>Explore the docs »</strong></a>
     <br />
