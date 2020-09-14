@@ -35,7 +35,6 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
-[![Product name screenshot][product-screenshot1]]
 
 This repository is a clone of the existing fully-functional website.
 You free to use however you'd like.
@@ -111,5 +110,4 @@ Project Link: [https://github.com/Gogee90/-](https://github.com/Gogee90/-)
 [issues-url]: https://github.com/Gogee90/-/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/igor-nikolaev-orenburg/
-[product-screenshot]: https://skr.sh/i/130920/pgx4piGH.jpg?download=1
-[product-screenshot1]: https://skr.sh/i/130920/rgbsZH7P.jpg?download=1
+[product-screenshot]: https://skr.sh/i/140920/59Hv5Sp0.jpg?download=1
