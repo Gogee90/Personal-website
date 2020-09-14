@@ -114,7 +114,7 @@ Project Link: [https://github.com/Gogee90/Personal-website/blob/master/README.md
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/Gogee90/-/issues
+[issues-url]: https://github.com/Gogee90/Personal-website/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/igor-nikolaev-orenburg/
 [product-screenshot]: https://skr.sh/i/140920/59Hv5Sp0.jpg?download=1
