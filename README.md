@@ -44,8 +44,12 @@ It's not actually a demo but a fully functional website built by me.
 [Demo](https://refill56.ru/)
 
 ### Built With
-* [PyQt5](https://riverbankcomputing.com/software/pyqt/download5)
-* [python-docx-template](https://github.com/elapouya/python-docx-template)
+* [Python](https://www.python.org/)
+* [Django](https://www.djangoproject.com/)
+* [Python social auth](https://github.com/python-social-auth/social-core)
+* [CKEditor](https://ckeditor.com/)
+* [Jquery modal](https://github.com/kylefox/jquery-modal)
+* [Jquery](https://jquery.com/)
 
 
 
@@ -63,18 +67,24 @@ At least Python:3.5 Python-docx-template
 1. Install Python https://www.python.org/
 2. Clone the repo
 git clone https://github.com/Gogee90/-
-3. Install packages
+3. Create virtual environment
+python -m venv your_env(linux: python3 -m venv your_env)
+4. Activate virtual environment
+Windows: your_env\Scripts\activate, Linux: source your_env/bin/activate
+5. Install packages
 pip install requirements.txt
-4. Run startwindow.py
+6. CD to your project's directory
+7. python manage.py migrate
+8. python manage.py runserver
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-1. To use the program you need to have python installed.
-2. Run sratwindow.py.
-3. Use cx_freeze to compile so you could use it as a standalone program.
+1. CD to your project's directory
+2. python manage.py migrate
+3. python manage.py runserver
 
 
 <!-- LICENSE -->
