@@ -95,7 +95,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Igor Nikolaev - [linkedin-url](https://www.linkedin.com/in/igor-nikolaev-orenburg/) - gogee09@gmail.com
 
-Project Link: [https://github.com/Gogee90/-](https://github.com/Gogee90/-)
+Project Link: [https://github.com/Gogee90/Personal-website/blob/master/README.md](https://github.com/Gogee90/Personal-website/blob/master/README.md)
 
 
 
