@@ -1,5 +1,4 @@
 # Personal-website
-# This repository is a clone of the existing fully-functional website.
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -38,7 +37,12 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 [![Product name screenshot][product-screenshot1]]
 
-An auto collision estimating software is a tool to estimate the level of collision repair required for an auto body
+This repository is a clone of the existing fully-functional website.
+You free to use however you'd like.
+
+### Demo
+It's not actually a demo but a fully functional website built by me.
+[Demo](https://refill56.ru/)
 
 ### Built With
 * [PyQt5](https://riverbankcomputing.com/software/pyqt/download5)
